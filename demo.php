@@ -14,7 +14,7 @@
 		</ol>
 		<p>Try enter your I.C. number and see the result.</p>
 		
-		<form action="index.php" method="post">
+		<form action="demo.php" method="post">
 			<p>
 				<label for="number">I.C. number</label>
 				<input type="text" maxlength="12" name="number">
