@@ -1,7 +1,7 @@
 Malaysia Identity Card Detail Extractor
 =======================================
 
-Malaysians Identity Card number contains some information about the card holder. From the number's, we can get:
+Malaysians Identity Card number contains some information about the card holder. From the number submitted, we can get:
 
 * Date of birth
 * Place of birth
@@ -32,9 +32,9 @@ The output will be in array format.
 <pre>
 Array
 (
-	[dob]    => <the date of birth>
-	[state]  => <the state>
-	[gender] => <the gender>
+	[dob]    => *the date of birth*
+	[state]  => *the state*
+	[gender] => *the gender*
 )
 </pre>
 
