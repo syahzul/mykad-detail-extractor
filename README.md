@@ -54,7 +54,7 @@ The output will be in array format.
 Array
 (
 	[dob]    => the date of birth
-	[state]  => the state*
+	[state]  => the state
 	[gender] => the gender
 )
 </pre>
