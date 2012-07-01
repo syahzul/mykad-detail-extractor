@@ -8,10 +8,12 @@ Malaysians Identity Card number contains some information about the card holder.
 * Gender
 
 
-How to Use
+Usage
 ----------
 
-You can easily use the class in your existing application. Just load the file and create new class instance. Example:
+You can easily use the class in your existing application. Just load the file and create new class instance. 
+
+<em>Example:</em>
 
 <pre>
 require dirname(__FILE__).'/myic.class.php';
@@ -23,8 +25,27 @@ $myic = new MyIC;
 $detail = $myic->get($_POST['number']);
 </pre>
 
+If you prefer some other format for the date, you can pass the second parameter to the method. Refer the PHP documentation[1] for complete information about date formatting.
 
-The output
+<em>Example:</em>
+
+<pre>
+require dirname(__FILE__).'/myic.class.php';
+
+// create new instance
+$myic = new MyIC;
+
+// set the date format for the output. 
+$format = 'Y-m-d';
+
+// send the number to the get() method			
+$detail = $myic->get($_POST['number'], $format);
+</pre>
+
+[1] http://php.net/manual/en/function.date.php
+
+
+Output
 ----------
 
 The output will be in array format.
@@ -32,9 +53,9 @@ The output will be in array format.
 <pre>
 Array
 (
-	[dob]    => *the date of birth*
-	[state]  => *the state*
-	[gender] => *the gender*
+	[dob]    => the date of birth
+	[state]  => the state*
+	[gender] => the gender
 )
 </pre>
 
