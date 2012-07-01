@@ -25,7 +25,7 @@ $myic = new MyIC;
 $detail = $myic->get($_POST['number']);
 </pre>
 
-If you prefer some other format for the date, you can pass the second parameter to the method. Refer the PHP documentation [1] for complete information about date formatting.
+If you prefer some other format for the date, you can pass the second parameter to the method. Refer the [PHP documentation] [1] for complete information about date formatting.
 
 <em>Example:</em>
 
@@ -42,7 +42,7 @@ $format = 'Y-m-d';
 $detail = $myic->get($_POST['number'], $format);
 </pre>
 
-[1]: http://php.net/manual/en/function.date.php
+[1]: http://php.net/manual/en/function.date.php [PHP documentation]
 
 
 Output
