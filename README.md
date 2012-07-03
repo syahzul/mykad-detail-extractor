@@ -1,4 +1,4 @@
-Malaysia Identity Card Detail Extractor
+Malaysia MyKad Detail Extractor
 =======================================
 
 Malaysians Identity Card number contains some information about the card holder. From the number submitted, we can get:

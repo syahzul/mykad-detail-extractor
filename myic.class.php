@@ -1,6 +1,6 @@
 <?php
 /**
- * 	Malaysia Identity Card Detail Extractor 
+ * 	Malaysia MyKad Detail Extractor
  *
  * @copyright	Copyright (c) 2012 Syahril Zulkefli. All rights reserved.
  * @author		Syahril Zulkefli a.k.a. syahzul <syahzul@gmail.com>
