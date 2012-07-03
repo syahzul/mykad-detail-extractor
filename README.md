@@ -46,7 +46,7 @@ $detail = $myic->get($_POST['number'], $format);
 
 
 Output
-----------
+------
 
 The output will be in array format.
 
