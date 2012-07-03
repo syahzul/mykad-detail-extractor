@@ -5,6 +5,7 @@
  * @copyright	Copyright (c) 2012 Syahril Zulkefli. All rights reserved.
  * @author		Syahril Zulkefli a.k.a. syahzul <syahzul@gmail.com>
  * @license		MIT License
+ * @version		1.0.1
  *	
  * Permission is hereby granted, free of charge, to any person obtaining a copy of 
  * this software and associated documentation files (the "Software"), to deal in the 
@@ -41,8 +42,17 @@ class MyIC {
 	 */
 	public function get($ic_no, $date_format = 'j F Y')
 	{
+		// strip out all non-numeric characters
+		$ic_no = preg_replace('/[^0-9]/', '', $ic_no);
+
 		if ( ! empty($ic_no))
 		{
+			// if the numbers is less than 12 digits
+			if (strlen($ic_no) < 12)
+			{
+				return FALSE;
+			}
+			
 			// send it to function to split it
 			$sections = $this->split($ic_no);
 		
@@ -63,6 +73,8 @@ class MyIC {
 		
 			return $detail;
 		}
+		
+		return FALSE;
 	}
 	
 	
